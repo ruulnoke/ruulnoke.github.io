@@ -22,7 +22,7 @@ Tässä on [linkki](https://ruulnoke.github.io/)
 </style>
 
 <div class="container">
-  <img src="images/school-project-figma-mockups.PNG">
+  <img src="images/school-project-figma-mockups.png">
   <img src="images/school-project-figma-mockup-2.PNG">
   <img src="images/school-project-figma-mockup-2.PNG">
 </div>
