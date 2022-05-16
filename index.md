@@ -17,11 +17,12 @@ Tässä on [linkki](https://ruulnoke.github.io/)
 }
 
 .container img {
-  width: 50%;
+  max-width: 100%;
 }
 </style>
 
 <div class="container">
   <img src="images/school-project-figma-mockups.PNG">
+  <img src="images/school-project-figma-mockup-2.PNG">
   <img src="images/school-project-figma-mockup-2.PNG">
 </div>
