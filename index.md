@@ -11,4 +11,12 @@ Hello world
 
 Tässä on [linkki](https://ruulnoke.github.io/)
 
-![alt](images\school-project-figma-mockup-2.PNG)
+<style>
+.container {
+  display:flex;
+}
+</style>
+
+<div class="container">
+  <img src="images/school-project-figma-mockup-2.PNG">
+</div>
