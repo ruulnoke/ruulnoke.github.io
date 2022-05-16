@@ -20,6 +20,7 @@ Tässä on [linkki](https://ruulnoke.github.io/)
 
 .container img {
   max-width: 100%;
+  border: none;
 }
 </style>
 
