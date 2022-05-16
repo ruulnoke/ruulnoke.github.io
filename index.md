@@ -22,6 +22,7 @@ Hello! I am Ruusu from Finland. I am a second-year student of data processing in
 
 - Finnish: native
 - English: fluent
+- Swedish: intermediate
 - Japanese: rusty intermediate
 - Italian: weak
 - Russian: alphabet
