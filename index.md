@@ -1,4 +1,6 @@
-# Hello
+## Bio
+
+Hello! I am Ruusu from Finland. I am a second-year student of data processing in JAMK, Jyväskylä University of Applied Sciences.
 
 ## Skills
 
@@ -20,7 +22,7 @@
 
 - Finnish: native
 - English: fluent
-- Japanese: rusty basics
+- Japanese: rusty intermediate
 - Italian: weak
 - Russian: alphabet
 
@@ -39,6 +41,7 @@ Small app I created with Svelte in the summer of 2021: [Pikamuisto](https://gith
 
 .container img {
   max-width: 100%;
+  margin: 2em 0;
   border: none;
 }
 </style>
