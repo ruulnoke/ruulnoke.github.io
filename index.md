@@ -29,6 +29,6 @@ Tässä on [linkki](https://ruulnoke.github.io/)
 
 Tekstiä
 
-  <img src="images/school-project-figma-mockup-2.PNG">
-  <img src="images/school-project-figma-mockup-2.PNG">
+  <img src="images/my-first-mockup.png">
+
 </div>
