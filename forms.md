@@ -1,6 +1,6 @@
 # Komponentit
 
-Tein valtaosan sovelluksen komponenteista. Luomis- ja muokkauslomakkeet, projektit-näkymän ja projekti-thumbnailit, projektiin liittyvät dialogit, painikkeet, merkintökortit sekä osan projekti-näkymästä. 
+Tein valtaosan sovelluksen komponenteista. Luomis- ja muokkauslomakkeet, projektit-näkymän ja projekti-thumbnailit, projektiin liittyvät dialogit, painikkeet, merkintökortit sekä osan projekti-näkymästä.
 
 Eniten haasteita aiheutti dynaaminen lomake, jota käytetään merkinnön luomiseen ja muokkaamiseen. Otan sen tässä tapausesimerkiksi.
 
@@ -34,9 +34,9 @@ Halusin tehdä käyttäjän syöttämistä teksteistä ja kuvista olioita. Reakt
 
 Olin jo projektin alussa tarkistanut, että Angular Materialilla on drag and drop -moduuli. Se on kuitenkin tehty tavalliselle taulukolle ja tarvitsin sen FormArraylle. Löysin StackOverflowsta tarvittavan muutoksen enkä lähtenyt rakentamaan sellaista itse.
 
-Etukäteen minua arvelutti, kuinka saan kuvat osaksi samaa taulukkoa tekstikappaleiden kanssa. Jos ne olisivat eri taulukoissa, drag and drop ei toimisi enkä saisi talteen merkintösisältöjen järjestystä. Voiko taulukkoon laittaa kahta erilaista syötettä? Kaikissa näkemissäni dynaamisen lomakkeen esimerkeissä luotiin ainoastaan identtisiä input-kenttiä. 
+Etukäteen minua arvelutti, kuinka saan kuvat osaksi samaa taulukkoa tekstikappaleiden kanssa. Jos ne olisivat eri taulukoissa, drag and drop ei toimisi enkä saisi talteen merkintösisältöjen järjestystä. Voiko taulukkoon laittaa kahta erilaista syötettä? Kaikissa näkemissäni dynaamisen lomakkeen esimerkeissä luotiin ainoastaan identtisiä input-kenttiä.
 
-Sitten tajusin, että tekstit ja kuvathan *ovat* samanlaisia olioita. Ne ovat kumpikin updateItem-tyyppiä. Ne eroavat ainoastaan ominaisuuksiensa arvoissa. Tietysti ne sopisivat samaan taulukkoon.
+Sitten tajusin, että tekstit ja kuvathan _ovat_ samanlaisia olioita. Ne ovat kumpikin updateItem-tyyppiä. Ne eroavat ainoastaan ominaisuuksiensa arvoissa. Tietysti ne sopisivat samaan taulukkoon.
 
 Haasteeksi jäi, voinko luoda dynaamisesti kahta erilaista input-kenttää. Kokeilin switchiä, ja sehän toimi.
 
@@ -140,7 +140,7 @@ Eikä siinä edes kaikki - minun täytyisi pystyä sijoittamaan jokaisesta kuvas
 
 Tätä himmeliä en lähtenyt edes kokeilemaan.
 
-Järkevämmältä tuntui, että kuva vietäisiin välittömästi S3Bucketiin ja saatu osoite sijoitettaisiin samantien kyseisen olion tietoihin. Jos käyttäjä venkslaa kuvia edestakaisin, on seurauksena toki turhaa liikennettä. Se on mielestäni kuitenkin pieni hinta verrattuna toisenlaisen ratkaisun monimutkaisuuteen. 
+Järkevämmältä tuntui, että kuva vietäisiin välittömästi S3Bucketiin ja saatu osoite sijoitettaisiin samantien kyseisen olion tietoihin. Jos käyttäjä venkslaa kuvia edestakaisin, on seurauksena toki turhaa liikennettä. Se on mielestäni kuitenkin pieni hinta verrattuna toisenlaisen ratkaisun monimutkaisuuteen.
 
 ```typescript
   // kuvien tallennus
@@ -167,9 +167,9 @@ Jotta dynaamiset kentät saa näkyviin, on ne ensiksi luotava. Nykyiset tekstika
 
 Mutta mitä teen kuville? Turvallisuussyistä ainoastaan käyttäjä voi lisätä kuvien syöttökenttiin sisältöä.
 
-Ei riitä, että vanhat kuvat ainoastaan näkyvät lomakkeessa kuten projektin kuvaa muokatessa. *Drag and drop* -ominaisuutta varten niiden on kuuluttava samaan taulukkoon kuin muukin sisältö.
+Ei riitä, että vanhat kuvat ainoastaan näkyvät lomakkeessa kuten projektin kuvaa muokatessa. _Drag and drop_ -ominaisuutta varten niiden on kuuluttava samaan taulukkoon kuin muukin sisältö.
 
-Ratkaisuksi keksin kuvan alla piilossa olevan tekstikentän. 
+Ratkaisuksi keksin kuvan alla piilossa olevan tekstikentän.
 
 ```typescript
 // haetaan merkinnän nykyiset tiedot projektin ja merkinnän id:n avulla
@@ -234,8 +234,9 @@ Vanhan kuvan osoite sijoitetaan näkymättömissä olevaan input-kenttään ja h
 </div>
 }
 ```
-![merkinnän muokkaus](images\craftfolio-merkinnan-muokkaus-vaiheineen.png "Merkinnän muokkaus")
 
+![merkinnän muokkaus](images\craftfolio-merkinnan-muokkaus-vaiheineen.png 'Merkinnän muokkaus')
+![merkinnän muokkaus](images\merkinnat-editointi.png)
 
 Merkintösisältöjen (updateItems) poistoa varten tarvitaan bäkkärille lista poistettavista.
 
