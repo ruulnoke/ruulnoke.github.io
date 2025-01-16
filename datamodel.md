@@ -4,7 +4,7 @@
 
 Loin mallin SQL-komentoina ja niistä Workbenchin reverse engineer -työkalulla.
 
-```SQL
+```sql
 CREATE DATABASE IF NOT EXISTS craftfolio;
 USE craftfolio;
 
