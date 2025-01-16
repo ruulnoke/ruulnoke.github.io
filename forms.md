@@ -235,7 +235,6 @@ Vanhan kuvan osoite sijoitetaan näkymättömissä olevaan input-kenttään ja h
 }
 ```
 
-![merkinnän muokkaus](images\craftfolio-merkinnan-muokkaus-vaiheineen.png 'Merkinnän muokkaus')
 ![merkinnän muokkaus](images\merkinnat-editointi.png)
 
 Merkintösisältöjen (updateItems) poistoa varten tarvitaan bäkkärille lista poistettavista.

@@ -4,50 +4,23 @@ Ideoin tuotekonseptin yhdessä toisen kurssilaisen kanssa. Jo alkuun voimakas vi
 
 ## Suunnittelu Figmalla
 
-Olin jo ennestään käyttänyt Figmaa. Emme laatineet lainkaan rautalankamalleja, vaan siirryimme suoraan suunnittelemaan lopullista ulkonäköä.
+Olin jo ennestään käyttänyt Figmaa. Ensimmäisen luonnoksen tein käsin paperille. Figmassa emme laatineet lainkaan rautalankamalleja, vaan siirryimme suoraan suunnittelemaan lopullista ulkonäköä. Alla joitain esimerkkejä.
+
+### Lista
+
+Alkuperäiseen konseptiin kuului myös lista. Käytin aika paljon aikaa sen suunnitteluun.
 
 ![muistista](images\muistilista.PNG)
 
 ![projektinäkymä](images\projektisivu.PNG)
 
-## Angular Material
+### Projektilomake
 
-Ongelmia kustomoinnin suhteen.
+Vasemmalla viimeinen luonnos Figmassa ja oikealla lopulliset näkymät. Tyyli pysyi melko samana, mutta toimintoja karsiutui.
 
-### Painikkeet
+![projektilomake](images\projektilomake.png)
+![projektilomake](images\projektinluomislomake.png)
 
-Kuinka monta? Parempi yksi komponentti, jota tyylitellään? Angular Material ei salli painikkeiden muotoilua luokkien avulla. Ainoastaan raaka muotoilu komponentin omassa css-tiedostossa toimii. Painikekomponenttien ensisijainen merkitys yhtenäiset tyylit - silloin fiksua olla painikkeita kaikkia tyylejä varten.
+## Angular Material sekä CSS
 
-```html
-<button mat-raised-button type="button">
-  <span class="button-content"><ng-content></ng-content>{{label}}</span>
-</button>
-```
-
-```css
-:host {
-  /* rajaa komponentin painikkeen kokoon - estää klikkauksen ulkopuolelta */
-  margin-right: auto;
-}
-
-button {
-  padding: 1.6rem;
-  border-radius: 0.7rem;
-  font-family: Imprima, sans-serif;
-  font-size: large;
-}
-
-.button-content {
-  display: flex;
-  flex-direction: row;
-  gap: 0.4rem;
-  align-items: center;
-  align-content: center;
-}
-```
-
-## Lomakkeet
-
-Syöttökentän koko
-
-![projektilomake](images/luo-uusi-projekti-360X800.PNG)
+Päätimme käyttää Angular Material -kirjastoa. Se oli juuri päivittynyt kolmanteen versioon eivätkä aiemmat komponenttien tyylittelytavat enää toimineet. Se aiheutti ongelmia. Emme lähteneet luomaan uutta custom-teemaa emmekä vaihtaneet vanhempaan versioon. Tapauksesta riippuen tein tyylittelyä sekä komponenttien omiin css-tiedostoihin että yleiseen tyylitiedostoon. Flexboxia tuli paljon käytettyä. Tyylittelin omat komponenttini sekä osittain myös sovelluksen muuta ulkonäköä.
