@@ -81,11 +81,13 @@ Haasteeksi jäi, voinko luoda dynaamisesti kahta erilaista input-kenttää. Koke
   }
 ```
 
+![merkinnön luominen](images/luo-uusi-merkintä.png)
+
 ## Kuvien tallennus
 
 Nyt kenttiä oli mahdollista luoda, poistaa ja liikutella. Enää puuttui kuvien todellinen lisäys. Nopeasti huomasin, että käyttäjän syöttämää kuvatiedostoa ei voi käsitellä ja liikutella kuin normaalia dataa. Olisin halunnut käydä kuvat läpi servicessä. Olisin lähettänyt ne yksitellen S3Bucketiin ja lisännyt olioon kuvan osoitteen. Se ei ollut kuitenkaan mahdollista, sillä kuvien osoite korruptoitui fakepathiksi.
 
-Projektilomakeessa kuvan lisäys tehdään luokkaosassa olevan File-muuttujan avulla. Muuttuja säilöö valittua tiedostoa kunnes lomake tallennetaan. Ennen tietojen lähettämistä eteenpäin kuva viedään S3Bucketiin ja saatu osoite napataan talteen. Tätä koodia teki myös toinen tiimiläinen.
+Projektilomakeessa kuvan lisäys tehdään luokkaosassa olevan File-muuttujan avulla. Muuttuja säilöö valittua tiedostoa kunnes lomake tallennetaan. Ennen tietojen lähettämistä eteenpäin kuva viedään S3Bucketiin ja saatu osoite napataan talteen. Tätä projektikuvan tallennusta teki myös toinen tiimiläinen.
 
 ```typescript
   // valittu tiedosto tallennetaan muuttujaan
@@ -113,21 +115,10 @@ Projektilomakeessa kuvan lisäys tehdään luokkaosassa olevan File-muuttujan av
       const project = await this.store.addProject({
         name: formData.name,
         image: imageUrl,
-        description: formData.description,
-        techniques: formData.techniques,
-        materials: formData.materials,
-        insights: formData.insights,
-        favorite: false,
-        // käytetään BaseProject-interfacea, sillä loput arvot lisätään tietokannassa
-      } as BaseProject);
-      this.submitting = false;
-      this.navigateToProject(project.id);
-    } catch (error) {
-      this.submitting = false;
-      this.error = `Tallennuksessa tapahtui virhe. Tarkista nettiyhteys.`;
-      console.log(error);
-    }
-  }
+        ...
+      }...)
+    ...}
+  ...}
 ```
 
 Dynaamisessa lomakkeessa voi olla kuitenkin lukuisia kuvia – tulisiko niille kaikille luoda dynaamisesti myös oma muuttuja?
@@ -157,13 +148,11 @@ Järkevämmältä tuntui, että kuva vietäisiin välittömästi S3Bucketiin ja 
 
 ## Merkinnän muokkaus
 
-Käyttäjälle voi tulla tarve muokata jo tekemäänsä merkintää. Tällöin editointilomakkeessa tulisi näkyä merkinnän nykyiset tiedot.
-
-Jotta dynaamiset kentät saa näkyviin, on ne ensiksi luotava. Nykyiset tekstikappaleet on helppo sijoittaa samalla luotuihin kenttiin.
+Käyttäjälle voi tulla tarve muokata jo tekemäänsä merkintää. Tällöin editointilomakkeessa tulisi näkyä merkinnän nykyiset tiedot. Jotta dynaamiset kentät saa näkyviin, on ne ensiksi luotava. Vanhat tekstikappaleet on helppo sijoittaa samalla luotuihin kenttiin.
 
 Mutta mitä teen kuville? Turvallisuussyistä ainoastaan käyttäjä voi lisätä kuvien syöttökenttiin sisältöä.
 
-Ei riitä, että vanhat kuvat ainoastaan näkyvät lomakkeessa kuten projektin kuvaa muokatessa. _Drag and drop_ -ominaisuutta varten niiden on kuuluttava samaan taulukkoon kuin muukin sisältö.
+Ei riitä, että vanhat kuvat ainoastaan näkyvät lomakkeessa kuten projektikuvaa muokatessa. _Drag and drop_ -ominaisuutta varten niiden on kuuluttava samaan taulukkoon kuin muukin merkintösisältö.
 
 Ratkaisuksi keksin kuvan alla piilossa olevan tekstikentän.
 
@@ -231,17 +220,24 @@ Vanhan kuvan osoite sijoitetaan näkymättömissä olevaan input-kenttään ja h
 }
 ```
 
-![merkinnän muokkaus](images\merkinnat-editointi.png)
-
-Merkintösisältöjen (updateItems) poistoa varten tarvitaan bäkkärille lista poistettavista.
+Lopuksi tallennetaan järjestynumerot ja palautetaan vanhojen kuvien tyyppiarvoksi 'image'.
 
 ```typescript
-// poistetaan dynaamisesti luotu kenttä
-  deleteItem(index: number) {
-    // otetaan talteen id bäkkäriä varten
-    if (this.updateItems.value[index].id) {
-      this.deletedItems.push(this.updateItems.value[index].id);
+// lomakedatan lähetys
+  async onSubmit(formData: any) {
+    ...
+    // otetaan indeksiarvo talteen järjestysnumeroksi
+    for (let [index, item] of formData.updateItems.entries()) {
+      item.sequenceNo = index;
+      // vaihdetaan samalla pois väliaikainen sisältötyyppi
+      if (item.contentType === 'old-image') {
+        item.contentType = 'image';
+      }
     }
-    this.updateItems.removeAt(index);
+    try {
+      ...
+    } ...
   }
 ```
+
+![merkinnän muokkaus](images\merkinnat-editointi.png)
