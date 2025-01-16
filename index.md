@@ -2,6 +2,8 @@
 
 Hello! I am Ruusu from Finland. I am a second-year student of data processing in JAMK, Jyväskylä University of Applied Sciences.
 
+[Craftfolio](./craftfolio.md)
+
 ## Skills
 
 ### Programming
