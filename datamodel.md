@@ -167,3 +167,11 @@ export interface ProjectStatus {
   status: 'started' | 'completed' | 'archived';
 }
 ```
+
+## Portfolion osiot
+
+- [Product owner](teamwork.md)
+- [UI/UX-suunnittelu](design.md)
+- [Tietomalli](datamodel.md)
+- [Tilanhallinta](store.md)
+- [Komponentit](forms.md)
