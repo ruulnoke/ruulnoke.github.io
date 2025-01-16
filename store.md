@@ -1,6 +1,6 @@
 # Tilanhallinta
 
-Tulisiko sovelluksessa olla store? Yritin pikaperehtyä aiheeseen. Aika paljon löytyi storen hyödyllisyyden kyseenalaistavia näkemyksiä. Yksi toteamus oli, että "jos et tiedä tarvitsetko store, et tarvitse storea." Toisaalta hiljattain julkaistua SignalStorea kehuttiin ja uteliaisuuteni heräsi. 
+Tulisiko sovelluksessa olla store? Kokemattomana yritin pikaperehtyä aiheeseen. Aika paljon löytyi storen hyödyllisyyden kyseenalaistavia näkemyksiä. Yksi toteamus oli, että "jos et tiedä tarvitsetko store, et tarvitse storea." Toisaalta hiljattain julkaistua SignalStorea kehuttiin ja uteliaisuuteni heräsi.
 
 ## NgRx SignalStore
 

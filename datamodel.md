@@ -86,10 +86,6 @@ FOREIGN KEY (lista_id) REFERENCES Lista(id)
 
 ![tietokantakaavio](images\craftfolio-tietokanta.PNG)
 
-### Kieli- ja nimeämisongelmat
-
-Johtuen varmaankin käymistäni kursseista, aloin automaattisesti luoda tietokantaa suomenkielisenä.
-
 ## Rajapinnat
 
 Loin sovellukseen rajapinnat ja niitä tarvittiinkin enemmän kuin ensin kuvittelin.

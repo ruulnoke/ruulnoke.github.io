@@ -2,32 +2,32 @@
 
 Koska minulla oli voimakkain visio projektista sekä suuri kiinnostus oppia syvemmin Scrumia, ryhdyin tuoteomistajaksi.
 
-- priorisointi
-- vision sanallistaminen
-- into ja usko
+## Henkinen työ
 
-## Projektinhallinta
+Tuoteomistajan homma tapahtui osin takaraivossa. Koin, että pystyin pitämään melko kiinteän fokuksen tavoitteessamme ja priorisoimaan työskentelyä mielekkäästi.
 
-Loin meille backlogit GitHubiin.
+Sanallistin visiota sekä valoin intoa ja uskoa tiimiläisiini.
+
+## Backlog
+
+Loin meille projektinhallintaa varten backlogin GitHubiin.
 
 ![projektinhallinta](images\github-projekti.PNG)
 
-## Product backlog
+Muokkasin ja järjestelin product backlogia aina tarpeen mukaan.
 
-Laadin product backlogin ja muokkasin sitä tarpeen mukaan.
+## Sprint planning ja tavoitteet
 
-## Sprint planning
+Johdin uuden sprintin suunnittelua (sprint planning).
 
-Johdin uuden sprintin suunnittelua (sprint planning). Kokeilimme kerran erillistä jalostussessiota, mutta totesimme, että meidän tapauksessamme se toimi parhaiten osana planningia. Käytännössä kävin XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-- hyvääksymiskriteerit
-
-![kriteeriesimerkki](images\kriteerit.PNG)
-
-## Tavoitteet
-
-Kyselin dailyissa noin parisen kertaa sprintissä, kuinka tiimiläiset kokevat, olemmeko saavuttamassa sprintin tavoitteen. Muistutin myös tavoitteesta.
+Käytännössä kävin XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 product backlogista sprintille, kyselin mitä tämä vaatisi, tarinapisteet, goalin muotoilu
 dailyissa väliajoin kyselin miltä tuntuu, ollaanko pääsemässä tavoitteeseen
 sovelluksen ydintoiminnot, tärkeysjärjestys
+
+Myöhemmin syksyllä otimme aloitteestani käyttöön myös hyväksymiskriteerit. Tässä esimerkki projentinpoistamistehtävästä.
+
+![kriteeriesimerkki](images\kriteerit.PNG)
+
+Kyselin dailyissa noin parisen kertaa sprintissä, kuinka tiimiläiset kokevat, olemmeko saavuttamassa sprintin tavoitteen. Muistutin myös tavoitteesta.
