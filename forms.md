@@ -1,14 +1,10 @@
-# Komponentit
+# Dynaaminen lomake
 
-Tein valtaosan sovelluksen komponenteista. Luomis- ja muokkauslomakkeet, projektit-näkymän ja projekti-thumbnailit, projektiin liittyvät dialogit, painikkeet, merkintökortit sekä osan projekti-näkymästä.
+Tein suuren osan sovelluksen komponenteista. Luomis- ja muokkauslomakkeet, projektit-näkymän ja projekti-thumbnailit, projektiin liittyvät dialogit, painikkeet, merkintökortit sekä osan projekti-näkymästä.
 
-Eniten haasteita aiheutti dynaaminen lomake, jota käytetään merkinnön luomiseen ja muokkaamiseen. Otan sen tässä tapausesimerkiksi.
+Tapausesimerkkinä esittelen tässä merkinnön luomis- ja muokkauslomakkeet. Toteutin ne dynaamisina lomakkeina. Olin aiemmin tehnyt ainoastaan templaattipohjaisia lomakkeita. Dynaamista lomaketta varten minun tuli opetella Angularin reaktiivinen lomake, jonka monipuolisuuteen nopeasti tykästyin.
 
-## Dynaaminen lomake
-
-Olin aiemmin tehnyt Angularilla templaattipohjaisia lomakkeita. Dynaamista lomaketta varten minun tuli opetella reaktiivinen lomake, jonka monipuolisuuteen nopeasti tykästyin.
-
-### Taulukon luonti: FormArray
+## Taulukon luonti: FormArray
 
 Halusin tehdä käyttäjän syöttämistä teksteistä ja kuvista olioita. Reaktiivisessa lomakkeessa se oli helppoa. Lisäsin vain haluamani ominaisuudet.
 
@@ -30,7 +26,7 @@ Halusin tehdä käyttäjän syöttämistä teksteistä ja kuvista olioita. Reakt
   }
 ```
 
-### Kenttien luonti sekä drag-and-drop
+## Kenttien luonti sekä drag-and-drop
 
 Olin jo projektin alussa tarkistanut, että Angular Materialilla on drag and drop -moduuli. Se on kuitenkin tehty tavalliselle taulukolle ja tarvitsin sen FormArraylle. Löysin StackOverflowsta tarvittavan muutoksen enkä lähtenyt rakentamaan sellaista itse.
 
@@ -85,7 +81,7 @@ Haasteeksi jäi, voinko luoda dynaamisesti kahta erilaista input-kenttää. Koke
   }
 ```
 
-### Kuvien tallennus
+## Kuvien tallennus
 
 Nyt kenttiä oli mahdollista luoda, poistaa ja liikutella. Enää puuttui kuvien todellinen lisäys. Nopeasti huomasin, että käyttäjän syöttämää kuvatiedostoa ei voi käsitellä ja liikutella kuin normaalia dataa. Olisin halunnut käydä kuvat läpi servicessä. Olisin lähettänyt ne yksitellen S3Bucketiin ja lisännyt olioon kuvan osoitteen. Se ei ollut kuitenkaan mahdollista, sillä kuvien osoite korruptoitui fakepathiksi.
 
@@ -159,7 +155,7 @@ Järkevämmältä tuntui, että kuva vietäisiin välittömästi S3Bucketiin ja 
   }
 ```
 
-### Merkinnän muokkaus
+## Merkinnän muokkaus
 
 Käyttäjälle voi tulla tarve muokata jo tekemäänsä merkintää. Tällöin editointilomakkeessa tulisi näkyä merkinnän nykyiset tiedot.
 
@@ -249,10 +245,3 @@ Merkintösisältöjen (updateItems) poistoa varten tarvitaan bäkkärille lista 
     this.updateItems.removeAt(index);
   }
 ```
-
-### Käytettävyysseikat?
-
-- merkkilaskuri
-- latausspinneri
-- jatkossa: kuva näkyviin?
-- ei voisi tallentaa kun kuvan lataus kesken

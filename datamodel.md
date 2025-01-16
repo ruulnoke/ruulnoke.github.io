@@ -2,7 +2,7 @@
 
 ## Tietokantasuunnitelma
 
-Loin mallin SQL-komentoina ja niistä Workbenchin reverse engineer -työkalulla.
+Loin kannan SQL-komentoina ja niistä relaatiokaavion MySql Workbenchin reverse engineer -työkalulla.
 
 ```sql
 CREATE DATABASE IF NOT EXISTS craftfolio;
