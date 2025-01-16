@@ -1,5 +1,9 @@
 # Tietomalli
 
+Vaikka suuntauduinkin tekemään pääosin fronttia, halusin SQL-intoilijana olla luomassa sovelluksen tietokantaa.
+
+Jälkikäteen ajateltuna suunnitelma olisi kannattanut laatia heti alkuun englanniksi. Myös kömpelö päivitys-sana (update) aiheutti ongelmia. Vasta myöhemmin syksyllä keksin projektivaiheen dokumentointia kuvamaan yksinkertaisen sanan _merkintä_.
+
 ## Tietokantasuunnitelma
 
 Loin kannan SQL-komentoina ja niistä relaatiokaavion MySql Workbenchin reverse engineer -työkalulla.
@@ -78,9 +82,6 @@ lista_id INT,
 PRIMARY KEY (id),
 FOREIGN KEY (lista_id) REFERENCES Lista(id)
 ) ENGINE=InnoDB;
-
-
-
 ```
 
 ![tietokantakaavio](images\craftfolio-tietokanta.PNG)
@@ -91,7 +92,7 @@ Johtuen varmaankin käymistäni kursseista, aloin automaattisesti luoda tietokan
 
 ## Rajapinnat
 
-Projektiin liittyviä rajapintoja tarvittiinkin enemmän kuin ensin kuvittelin.
+Loin sovellukseen rajapinnat ja niitä tarvittiinkin enemmän kuin ensin kuvittelin.
 
 ```typescript
 // -----MERKINTÄ----

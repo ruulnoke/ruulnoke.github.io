@@ -1,18 +1,14 @@
 # Ticorporate-kurssin portfolio
 
-Osallistuin syksyllä 2024 JAMK:in Ticorporate-projektikurssille. Suunnittelimme ja teimme sovelluksen pienryhmissä. Omassa tiimissäni oli neljä jäsentä. Teimme Craftfolio-nimistä projektipäiväkirjasovellusta käsityöharrastajille. Tein pääasiassa fronttia sekä toimin tuoteomistajana.
+Osallistuin syksyllä 2024 JAMK:in Ticorporate-projektikurssille, jolla suunnittelimme ja teimme sovelluksen pienryhmissä. Nelihenkinen tiimimme teki Craftfolio-nimistä projektipäiväkirjasovellusta käsityöharrastajille.
+
+Tein pääasiassa fronttia sekä toimin tuoteomistajana.
 
 ## Mitä toivoin oppivani
 
-- Scrum ja yleisesti tiimityöskentely
-- Angular-osaamisen syventäminen
-- Kokonaisen sovelluksen teko (bäkkärin ja frontin yhteys)
-
-## Mitä opin
-
--
-
-Opin myös markdownia laatiessani GitHub-ohjeet sekä tämän portfolion.
+- Scrumia ja yleisesti tiimityöskentelyä
+- Rutinoituneempaa Angular-osaamista
+- Ymmärtämään millaista on kokonaisen sovelluksen teko (bäkkärin ja frontin yhteys)
 
 ## Portfolion osiot
 
@@ -20,4 +16,17 @@ Opin myös markdownia laatiessani GitHub-ohjeet sekä tämän portfolion.
 - [UI/UX-suunnittelu](design.md)
 - [Tietomalli](datamodel.md)
 - [Tilanhallinta](store.md)
-- [Komponentit](forms.md)
+- [Dynaaminen lomake](forms.md)
+
+## Mitä opin
+
+- Scrumia ja tiimityöskentelyä
+- Priorisointia ja projektinhallintaa
+- Angularia ja peruskoodausta
+- Tilanhallintaa
+- Ongelmanratkaisua
+- Millaista on sovelluskehitys
+
+## Tulevaisuudessa
+
+Haluaisin työskennellä osana Scrum-tiimiä.
