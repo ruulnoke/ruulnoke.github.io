@@ -6,6 +6,12 @@ Ideoin tuotekonseptin yhdessä toisen kurssilaisen kanssa. Jo alkuun minulla oli
 
 Olin jo ennestään käyttänyt Figmaa. Ensimmäisen luonnoksen tein käsin paperille. Figmassa emme laatineet lainkaan rautalankamalleja, vaan siirryimme suoraan suunnittelemaan lopullista ulkonäköä. Alla joitain esimerkkejä.
 
+### Lista
+
+Alkuperäiseen konseptiin kuului myös lista. Tässä sen Figma-luonnoksia.
+
+![muistista](images/muistilista.PNG)
+
 ### Projektinäkymä
 
 Luonnoksia Figmassa. Tavoittelin mahdollisimman selkeää ja kompaktia käyttöliittymää.
@@ -21,12 +27,6 @@ Lopullinen projektinäkymä, jonka merkintökortit ja painikkeet ovat tekemiäni
 Vasemmalla viimeinen luonnos Figmassa ja oikealla lopulliset näkymät. Tyyli pysyi melko samana, mutta toimintoja karsiutui ja siirtyi eri paikkaan.
 
 ![projektilomake](images/projektilomake.png)
-
-### Lista
-
-Alkuperäiseen konseptiin kuului myös lista. Tässä sen Figma-luonnoksia.
-
-![muistista](images/muistilista.PNG)
 
 ## Angular Material sekä CSS
 

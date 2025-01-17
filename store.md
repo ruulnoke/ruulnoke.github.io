@@ -71,6 +71,15 @@ Loppujen lopuksi storessamme tehdään pääosin samat toimenpiteet kuin tietoka
     },
 ```
 
+Projektikomponentin luokkaosassa:
+
+```typescript
+// signal side effect: lähettää huomautuksen aina kun filter-signaali emitoi arvon
+effect(() => {
+  this.selectedProject = this.store.getById(this.projectId);
+});
+```
+
 Storen kanssa operoidessa opin paljon frontin ja bäkkärin välisestä viestinnästä. Monesti ongelmana oli, etten saanut bäkkäriltä sellaista palautusta kuin olisin tarvinnut. Välillä itsekin korjasin niitä bäkkärin puolella.
 
 ## Portfolion osiot
