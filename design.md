@@ -10,7 +10,7 @@ Olin jo ennestään käyttänyt Figmaa. Ensimmäisen luonnoksen tein käsin pape
 
 Luonnoksia Figmassa. Tavoittelin mahdollisimman selkeää ja kompaktia käyttöliittymää.
 
-![projektinäkymäluonnokset](images/projektisivu.png)
+![projektisivuluonnoksia](images/projektisivuluonnos.png)
 
 Lopullinen projektinäkymä, jonka merkintökortit ja painikkeet ovat tekemiäni.
 
@@ -20,13 +20,13 @@ Lopullinen projektinäkymä, jonka merkintökortit ja painikkeet ovat tekemiäni
 
 Vasemmalla viimeinen luonnos Figmassa ja oikealla lopulliset näkymät. Tyyli pysyi melko samana, mutta toimintoja karsiutui ja siirtyi eri paikkaan.
 
-![projektilomake](images\projektilomake.png)
+![projektilomake](images/projektilomake.png)
 
 ### Lista
 
 Alkuperäiseen konseptiin kuului myös lista. Tässä sen Figma-luonnoksia.
 
-![muistista](images\muistilista.PNG)
+![muistista](images/muistilista.PNG)
 
 ## Angular Material sekä CSS
 
