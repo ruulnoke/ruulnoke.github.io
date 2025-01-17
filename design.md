@@ -8,7 +8,7 @@ Olin jo ennestään käyttänyt Figmaa. Ensimmäisen luonnoksen tein käsin pape
 
 ### Projektinäkymä
 
-Projektinäkymän luonnoksia Figmassa. Tavoittelin mahdollisimman selkeää ja kompaktia käyttöliittymää. Konseptivaiheen modaali vaihtui haitariksi.
+Luonnoksia Figmassa. Tavoittelin mahdollisimman selkeää ja kompaktia käyttöliittymää.
 
 ![projektinäkymä](images\projektisivu.png)
 
@@ -24,21 +24,17 @@ Vasemmalla viimeinen luonnos Figmassa ja oikealla lopulliset näkymät. Tyyli py
 
 ### Lista
 
-Alkuperäiseen konseptiin kuului myös lista, jonka suunnitteluun käytin melko paljon aikaa.
+Alkuperäiseen konseptiin kuului myös lista. Tässä sen Figma-luonnoksia.
 
 ![muistista](images\muistilista.PNG)
 
-### Design document
-
-Laadin suunnitteludokumentin toisen tiimiläisemme kanssa. Tässä siitä osa.
-
-![design](images\design-document.PNG)
-
 ## Angular Material sekä CSS
 
-Päätimme käyttää Angular Material -kirjastoa. Se oli juuri päivittynyt kolmanteen versioon eivätkä aiemmat muokkaustavat enää toimineet. Emme kuitenkaan lähteneet luomaan custom-teemaa emmekä vaihtaneet vanhempaan versioon.
+Päätimme käyttää Angular Material -kirjastoa. Se oli juuri päivittynyt kolmanteen versioon eivätkä aiemmat helpot muokkaustavat enää toimineet.
 
-Tapauksesta riippuen tein tyylittelyä sekä komponenttien omiin css-tiedostoihin että yleiseen tyylitiedostoon. Flexboxia tuli paljon käytettyä. Tyylittelin omat komponenttini sekä osittain myös sovelluksen muuta ulkonäköä.
+Tapauksesta riippuen tein tyylittelyä sekä komponenttien omiin css-tiedostoihin että yleiseen tyylitiedostoon. Käytin paljon flexboxia.
+
+Tyylittelin omat komponenttini sekä osittain myös sovelluksen muuta ulkonäköä.
 
 ## Käytettävyys ja saavutettavuus
 

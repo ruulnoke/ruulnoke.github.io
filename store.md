@@ -4,11 +4,9 @@ Tulisiko sovelluksessa olla store? Kokemattomana yritin pikaperehtyä aiheeseen.
 
 ## NgRx SignalStore
 
-SignalStore on hyvin funktionaalista ohjelmointia ja sen lukemaan ja kirjoittamaan opettelu oli vaikeaa.
+SignalStore on hyvin funktionaalista ohjelmointia ja sen opettelu oli vaikeaa. Sisäkkäisistä anonyymeista funktioista meni pää pyörälle. Hankalaa oli myös alkuun ymmärtää koko storen ideaa.
 
-Monesti ongelma oli, etten saanut bäkkäriltä sellaista palautusta kuin olisin tarvinnut. Korjasin itsekin välillä niitä bäkkärin puolella. Hyvin usein menin myös sekaisin kaikista sisäkkäisistä funktioista.
-
-Meidän tapauksessamme storessa tehdään lähinnä samat toimenpiteet mitkä tapahtuvat tietokannassa. Turhaa työtä? Toisaalta nyt ei tarvitse hakea koko tietokantaa kuin sovelluksen käynnistettäessä.
+Loppujen lopuksi storessamme tehdään pääosin samat toimenpiteet kuin tietokannassakin. Turhaa työtä? Toisaalta nyt ei tarvitse hakea koko tietokantaa kuin sovelluksen käynnistettäessä.
 
 Storen metodit:
 
@@ -49,3 +47,5 @@ Storen metodit:
       return project;
     },
 ```
+
+Storen kanssa operoidessa opin paljon frontin ja bäkkärin välisestä viestinnästä. Monesti ongelmana oli, etten saanut bäkkäriltä sellaista palautusta kuin olisin tarvinnut. Välillä itsekin korjasin niitä bäkkärin puolella.

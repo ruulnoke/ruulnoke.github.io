@@ -1,12 +1,10 @@
 # Product owner
 
-Koska minulla oli voimakkain visio projektista sekä suuri kiinnostus oppia syvemmin Scrumia, ryhdyin tuoteomistajaksi.
+Minusta tuli tuoteomistaja, sillä minulla oli voimakkain visio projektista sekä suuri kiinnostus oppia syvemmin Scrumia.
 
-## Henkinen työ
+## Fokus ja visio
 
-Tuoteomistajan homma tapahtui osin takaraivossa. Koin, että pystyin pitämään melko kiinteän fokuksen tavoitteessamme ja priorisoimaan työskentelyä mielekkäästi.
-
-Sanallistin visiota sekä valoin intoa ja uskoa tiimiläisiini.
+Tuoteomistajan homma tapahtui osin takaraivossa. Koin, että pystyin pitämään melko kiinteän fokuksen tavoitteessamme ja priorisoimaan työskentelyä mielekkäästi. Ajatustyön lisäksi sanallistin visiota sekä valoin intoa ja uskoa tiimiläisiini.
 
 ## Backlog
 
@@ -18,16 +16,12 @@ Muokkasin ja järjestelin product backlogia aina tarpeen mukaan.
 
 ## Sprint planning ja tavoitteet
 
-Johdin uuden sprintin suunnittelua (sprint planning).
+Johdin uuden sprintin suunnittelua (sprint planning). Käytännössä kävin systemaattisesti läpi backlogia. Mitä puuttuu? Mitä tämä vaatii? Jossain vaiheessa käytimme tarinapisteitäkin. Tehtävien nimeäminen ja rajaaminen vaati opettelua.
 
-Käytännössä kävin XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-product backlogista sprintille, kyselin mitä tämä vaatisi, tarinapisteet, goalin muotoilu
-dailyissa väliajoin kyselin miltä tuntuu, ollaanko pääsemässä tavoitteeseen
-sovelluksen ydintoiminnot, tärkeysjärjestys
-
-Myöhemmin syksyllä otimme aloitteestani käyttöön myös hyväksymiskriteerit. Tässä esimerkki projentinpoistamistehtävästä.
+Myöhemmin syksyllä otimme aloitteestani käyttöön myös hyväksymiskriteerit. Tässä esimerkki tehtävästä "Käyttäjä haluaa poistaa projektin, jotta tilaa vapautuu".
 
 ![kriteeriesimerkki](images\kriteerit.PNG)
 
-Kyselin dailyissa noin parisen kertaa sprintissä, kuinka tiimiläiset kokevat, olemmeko saavuttamassa sprintin tavoitteen. Muistutin myös tavoitteesta.
+Muotoilin sprintille myös tavoitteen. Se oli välillä hieman hankalaa, sillä työn alla oli monesti erilaisia mutta yhtä tärkeitä asioita.
+
+Kyselin dailyissa noin parisen kertaa sprintissä, kuinka tiimiläiset kokevat, olemmeko saavuttamassa tavoitteemme. Muistutin tavoitteesta tarpeen mukaan.

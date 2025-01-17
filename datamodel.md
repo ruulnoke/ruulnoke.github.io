@@ -2,8 +2,6 @@
 
 Vaikka suuntauduinkin tekemään pääosin fronttia, halusin SQL-intoilijana olla luomassa sovelluksen tietokantaa.
 
-Jälkikäteen ajateltuna suunnitelma olisi kannattanut laatia heti alkuun englanniksi. Myös kömpelö päivitys-sana (update) aiheutti ongelmia. Vasta myöhemmin syksyllä keksin projektivaiheen dokumentointia kuvamaan yksinkertaisen sanan _merkintä_.
-
 ## Tietokantasuunnitelma
 
 Loin kannan SQL-komentoina ja niistä relaatiokaavion MySql Workbenchin reverse engineer -työkalulla.
@@ -85,6 +83,8 @@ FOREIGN KEY (lista_id) REFERENCES Lista(id)
 ```
 
 ![tietokantakaavio](images\craftfolio-tietokanta.PNG)
+
+Jälkikäteen ajateltuna tietokantasuunnitelma olisi kannattanut laatia heti alkuun englanniksi. Myös kömpelö päivitys-sana (update) aiheutti ongelmia. Vasta myöhemmin syksyllä keksin projektivaiheen dokumentointia kuvamaan yksinkertaisen sanan _merkintä_.
 
 ## Rajapinnat
 
