@@ -6,16 +6,18 @@ Tulisiko sovelluksessa olla store? Kokemattomana yritin pikaperehtyä aiheeseen.
 
 SignalStore on hyvin funktionaalista ohjelmointia ja sen opettelu oli vaikeaa. Sisäkkäisistä anonyymeista funktioista meni pää pyörälle. Hankalaa oli myös alkuun ymmärtää koko storen ideaa.
 
-Loppujen lopuksi storessamme tehdään pääosin samat toimenpiteet kuin tietokannassakin. Turhaa työtä? Toisaalta nyt ei tarvitse hakea koko tietokantaa kuin sovelluksen käynnistettäessä.
+Loppujen lopuksi storessamme tehdään pääosin samat toimenpiteet kuin tietokannassakin. Turhaa työtä? Toisaalta nyt ei tarvitse jatkuvasti hakea koko tietokantaa.
 
-Storen metodit:
+### Metodit
 
 - projektin luonti, muokkaus ja poisto
 - merkinnän luonti, muokkaus ja poisto
-- projektin tilan vaihto (valmis, kesken, arkistoitu)
+- projektin statuksen vaihto (valmis, kesken, arkistoitu)
 - projektin haku id:n perusteella
 - merkinnän haku id:n perusteella
-- projektien suodatus tilan perusteella
+- projektien suodatus statuksen perusteella
+
+#### Esimerkkejä
 
 ```typescript
 // PROJEKTIN POISTO
@@ -26,7 +28,28 @@ Storen metodit:
         projects: state.projects.filter((project) => project.id !== id),
       }));
     },
+```
 
+```typescript
+// MERKINNÄN MUOKKAUS
+    async editProjectUpdate(newupdate: EditedProjectUpdate) {
+      const editedUpdate = await projectService.putEditedUpdate(newupdate);
+      // päivitetään tila
+      patchState(store, (state) => ({
+        projects: state.projects.map((project) => {
+          if (project.id === newupdate.projectId && project.updates) {
+            project.updates = project.updates.map((update) => {
+              if (update.id === newupdate.id) {
+                // merkinnönjäseniin sijoitetaan muokatut jäsenet
+                update.updateItems = editedUpdate.updateItems;
+              }
+              return update;
+            });
+          }
+          return project;
+        }),
+      }));
+    },
 ```
 
 ```typescript
