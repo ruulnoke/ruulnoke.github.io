@@ -10,7 +10,7 @@ Olin jo ennestään käyttänyt Figmaa. Ensimmäisen luonnoksen tein käsin pape
 
 Luonnoksia Figmassa. Tavoittelin mahdollisimman selkeää ja kompaktia käyttöliittymää.
 
-![projektinäkymä](images\projektisivu.png)
+![projektinäkymäluonnokset](images/projektisivu.png)
 
 Lopullinen projektinäkymä, jonka merkintökortit ja painikkeet ovat tekemiäni.
 
@@ -39,3 +39,12 @@ Tyylittelin omat komponenttini sekä osittain myös sovelluksen muuta ulkonäkö
 ## Käytettävyys ja saavutettavuus
 
 Näihin olisin halunnut ehtiä perehtyä enemmän.
+
+## Portfolion osiot
+
+- [UI/UX-suunnittelu](design.md)
+- [Tietomalli](datamodel.md)
+- [Tilanhallinta](store.md)
+- [Dynaaminen lomake](forms.md)
+- [Product owner](teamwork.md)
+- [Etusivu](craftfolio.md)

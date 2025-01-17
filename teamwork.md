@@ -25,3 +25,12 @@ Myöhemmin syksyllä otimme aloitteestani käyttöön myös hyväksymiskriteerit
 Muotoilin sprintille myös tavoitteen. Se oli välillä hieman hankalaa, sillä työn alla oli monesti erilaisia mutta yhtä tärkeitä asioita.
 
 Kyselin dailyissa noin parisen kertaa sprintissä, kuinka tiimiläiset kokevat, olemmeko saavuttamassa tavoitteemme. Muistutin tavoitteesta tarpeen mukaan.
+
+## Portfolion osiot
+
+- [UI/UX-suunnittelu](design.md)
+- [Tietomalli](datamodel.md)
+- [Tilanhallinta](store.md)
+- [Dynaaminen lomake](forms.md)
+- [Product owner](teamwork.md)
+- [Etusivu](craftfolio.md)

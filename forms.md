@@ -4,6 +4,10 @@ Tein suuren osan sovelluksen komponenteista. Luomis- ja muokkauslomakkeet, proje
 
 Tapausesimerkkinä esittelen tässä merkinnön luomis- ja muokkauslomakkeet. Toteutin ne dynaamisina lomakkeina. Olin aiemmin tehnyt ainoastaan templaattipohjaisia lomakkeita. Dynaamista lomaketta varten minun tuli opetella Angularin reaktiivinen lomake, jonka monipuolisuuteen nopeasti tykästyin.
 
+## Miksi?
+
+![merkinnön luominen](images/luo-uusi-merkintä.png)
+
 ## Taulukon luonti: FormArray
 
 Halusin tehdä käyttäjän syöttämistä teksteistä ja kuvista olioita. Reaktiivisessa lomakkeessa se oli helppoa. Lisäsin vain haluamani ominaisuudet.
@@ -26,13 +30,13 @@ Halusin tehdä käyttäjän syöttämistä teksteistä ja kuvista olioita. Reakt
   }
 ```
 
-## Kenttien luonti sekä drag-and-drop
+## Kenttien luonti sekä drag and drop
 
-Olin jo projektin alussa tarkistanut, että Angular Materialilla on drag and drop -moduuli. Se on kuitenkin tehty tavalliselle taulukolle ja tarvitsin sen FormArraylle. Löysin StackOverflowsta tarvittavan muutoksen enkä lähtenyt rakentamaan sellaista itse.
+Olin jo projektin alussa tarkistanut, että Angular Materialilla on _drag and drop_ -moduuli. Se on kuitenkin tehty tavalliselle taulukolle ja tarvitsin sen FormArraylle. Löysin [StackOverflowsta](https://stackoverflow.com/questions/56149461/draggable-formgroups-in-formarray-reactive-forms/60831464#60831464) tarvittavan muutoksen enkä lähtenyt rakentamaan sellaista itse.
 
-Etukäteen minua arvelutti, kuinka saan kuvat osaksi samaa taulukkoa tekstikappaleiden kanssa. Jos ne olisivat eri taulukoissa, drag and drop ei toimisi enkä saisi talteen merkintösisältöjen järjestystä. Voiko taulukkoon laittaa kahta erilaista syötettä? Kaikissa näkemissäni dynaamisen lomakkeen esimerkeissä luotiin ainoastaan identtisiä input-kenttiä.
+Etukäteen minua arvelutti, kuinka saan kuvat osaksi samaa taulukkoa tekstikappaleiden kanssa. Jos ne olisivat eri taulukoissa, _drag and drop_ ei toimisi enkä saisi talteen merkintösisältöjen järjestystä. Voiko taulukkoon laittaa kahta erilaista syötettä? Kaikissa näkemissäni dynaamisen lomakkeen esimerkeissä luotiin ainoastaan identtisiä input-kenttiä.
 
-Sitten tajusin, että tekstit ja kuvathan _ovat_ samanlaisia olioita. Ne ovat kumpikin updateItem-tyyppiä. Ne eroavat ainoastaan ominaisuuksiensa arvoissa. Tietysti ne sopisivat samaan taulukkoon.
+Sitten tajusin, että tekstit ja kuvathan _ovat_ samanlaisia olioita. Ne ovat kumpikin updateItem-tyyppiä. Ne eroavat ainoastaan attribuuttiensa arvoissa. Tietysti ne sopisivat samaan taulukkoon.
 
 Haasteeksi jäi, voinko luoda dynaamisesti kahta erilaista input-kenttää. Kokeilin switchiä, ja sehän toimi.
 
@@ -85,9 +89,9 @@ Haasteeksi jäi, voinko luoda dynaamisesti kahta erilaista input-kenttää. Koke
 
 ## Kuvien tallennus
 
-Nyt kenttiä oli mahdollista luoda, poistaa ja liikutella. Enää puuttui kuvien todellinen lisäys. Nopeasti huomasin, että käyttäjän syöttämää kuvatiedostoa ei voi käsitellä ja liikutella kuin normaalia dataa. Olisin halunnut käydä kuvat läpi servicessä. Olisin lähettänyt ne yksitellen S3Bucketiin ja lisännyt olioon kuvan osoitteen. Se ei ollut kuitenkaan mahdollista, sillä kuvien osoite korruptoitui fakepathiksi.
+Nyt kenttiä oli mahdollista luoda, poistaa ja liikutella. Enää puuttui kuvien todellinen lisäys. Nopeasti huomasin, että käyttäjän syöttämää kuvatiedostoa ei voi käsitellä ja liikutella kuin muuta dataa. Olisin halunnut luupata kuvat läpi servicessä. Se ei ollut kuitenkaan mahdollista, sillä kuvien osoite korruptoitui fakepathiksi.
 
-Projektilomakeessa kuvan lisäys tehdään luokkaosassa olevan File-muuttujan avulla. Muuttuja säilöö valittua tiedostoa kunnes lomake tallennetaan. Ennen tietojen lähettämistä eteenpäin kuva viedään S3Bucketiin ja saatu osoite napataan talteen. Tätä projektikuvan tallennusta teki myös toinen tiimiläinen.
+Projektilomakeessa teimme kuvanlisäyksen luokkaosassa olevan File-muuttujan avulla. Muuttuja säilöö valittua tiedostoa kunnes lomake tallennetaan. Ennen tietojen lähettämistä eteenpäin kuva viedään S3Bucketiin ja saatu osoite napataan talteen. Tätä projektikuvan tallennusta teki myös toinen tiimiläinen.
 
 ```typescript
   // valittu tiedosto tallennetaan muuttujaan
@@ -241,3 +245,12 @@ Lopuksi tallennetaan järjestynumerot ja palautetaan vanhojen kuvien tyyppiarvok
 ```
 
 ![merkinnän muokkaus](images\merkinnat-editointi.png)
+
+## Portfolion osiot
+
+- [UI/UX-suunnittelu](design.md)
+- [Tietomalli](datamodel.md)
+- [Tilanhallinta](store.md)
+- [Dynaaminen lomake](forms.md)
+- [Product owner](teamwork.md)
+- [Etusivu](craftfolio.md)

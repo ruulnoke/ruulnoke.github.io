@@ -49,3 +49,12 @@ Storen metodit:
 ```
 
 Storen kanssa operoidessa opin paljon frontin ja bäkkärin välisestä viestinnästä. Monesti ongelmana oli, etten saanut bäkkäriltä sellaista palautusta kuin olisin tarvinnut. Välillä itsekin korjasin niitä bäkkärin puolella.
+
+## Portfolion osiot
+
+- [UI/UX-suunnittelu](design.md)
+- [Tietomalli](datamodel.md)
+- [Tilanhallinta](store.md)
+- [Dynaaminen lomake](forms.md)
+- [Product owner](teamwork.md)
+- [Etusivu](craftfolio.md)

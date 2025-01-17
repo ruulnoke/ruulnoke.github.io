@@ -12,11 +12,11 @@ Tein pääasiassa fronttia sekä toimin tuoteomistajana.
 
 ## Portfolion osiot
 
-- [Product owner](teamwork.md)
 - [UI/UX-suunnittelu](design.md)
 - [Tietomalli](datamodel.md)
 - [Tilanhallinta](store.md)
 - [Dynaaminen lomake](forms.md)
+- [Product owner](teamwork.md)
 
 ## Mitä opin
 
