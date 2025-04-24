@@ -1,4 +1,4 @@
-# Welcome to my portfolio
+# Ruusu's portfolio
 
 Hello! I'm Ruusu Nokelainen and I study data processing in Jyväskylä University of Applied Sciences.
 
@@ -8,6 +8,7 @@ Hello! I'm Ruusu Nokelainen and I study data processing in Jyväskylä Universit
 - Small Angular app for enjoying surprising Christmas calendar with a chosen theme: [Teemajoulukalenteri](https://ruulnoke.github.io/teemajoulukalenteri) ([source code](https://github.com/ruulnoke/teemajoulukalenteri))
 - Small Svelte app showcasing historical photos: [Pikamuisto](https://ruulnoke.github.io/pikamuisto) ([source code](https://github.com/ruulnoke/pikamuisto))
 - Some of my designs: [Mock-ups](./mockups.md) and [Posters](./posters.md)
+- Short artistic video created with Premiere Pro in [Youtube](https://www.youtube.com/watch?v=P59lnNOZ7bI)
 
 ## Technical skills
 
