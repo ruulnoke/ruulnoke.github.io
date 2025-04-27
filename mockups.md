@@ -14,9 +14,9 @@
 }
 </style>
 
-These are views from the sauna timer in my imaginary home application management app. You can try the Finnish prototype in [Figma](https://www.figma.com/proto/L5OzfxoXWIgNtj1Wkm9obL/WEB-UI-2---lopputehtava?node-id=307-658&t=7A9CcyyfCQgZUO7z-1&scaling=scale-down&content-scaling=fixed&page-id=307%3A376&starting-point-node-id=307%3A658&).
+These are views from the sauna timer in my imaginary home application management app. You can try the Finnish prototype in [Figma](https://www.figma.com/proto/L5OzfxoXWIgNtj1Wkm9obL/WEB-UI-2---lopputehtava?node-id=307-658&t=7A9CcyyfCQgZUO7z-1&scaling=scale-down&content-scaling=fixed&page-id=307%3A376&starting-point-node-id=307%3A658&show-proto-sidebar=1).
 
-![sauna-ajastin](images/sauna-ajastin.PNG)show-proto-sidebar=1).
+![sauna-ajastin](images/sauna-ajastin.PNG)
 
 <div class="container">
 
